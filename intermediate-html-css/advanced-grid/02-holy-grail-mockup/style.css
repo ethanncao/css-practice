@@ -89,3 +89,61 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* my code */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.sidebar {
+  grid-row: 2/4;
+  grid-column: 1;
+}
+
+.footer {
+  grid-row: 4;
+  grid-column: 1/-1;
+  display: grid;
+  align-items: center;
+  height: 100px;
+}
+
+.header {
+  grid-column: 1/-1;
+  height: 100px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  height: 200px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.sidebar {
+  display: grid;
+  gap: 50px;
+}
+
+.nav {
+  display: grid;
+  align-items: center;
+}
